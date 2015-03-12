@@ -8,11 +8,20 @@
 # end
 
 def reverse_alphabetize()
-	# do the input thing, store into 
 	array_of_words = []
-	when input != "\n"
-		# prompt
-		# add result of prompt to 
+	puts "Enter a word: "
+	word = gets.chomp
+	while word != ""
+		array_of_words.push(word)
+		word = gets.chomp
 	end
-	return array_of_words.sort.reverse!
+	puts "Re-alphabetizing..."
+	array_of_words.map! {|word| word.downcase}
+	# array_of_words.sort!
+	# while array_of_words != []
+	# 	puts array_of_words.pop + "\n"
+	# end
+	array_of_words.sort.reverse.each {|word| puts word}
 end
+
+reverse_alphabetize()
