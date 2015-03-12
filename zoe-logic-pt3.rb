@@ -6,17 +6,20 @@
 # 		OR look into case statements (see the resources below).
 
 def grading(grade_percent)
-	case grade_percent >= 92
-		return "A"
-	end
-	case grade_percent >= 80
-		return "B"
-	end
+	return case grade_percent
+	when grade_percent >= 92
+		"A"
+	when grade_percent >= 80
+		"B"
 	case grade_percent >= 70
-		return "C"
-	end
+		"C"
 	case grade_percent >= 60
-		return "D"
+		"D"
+	else
+		"F" 
+		# not sure this will work
+		# return "F"
+		# ?
+		# to test
 	end
-	return "F"
 end
