@@ -18,4 +18,5 @@ def logic1(x)
 		return "Giraffe"
 	else
 		return "Caballo"
+	end
 end
