@@ -19,4 +19,3 @@ def cat_proximity(prox)
 		puts "See also: http://xkcd.com/231/"
 	end
 end
-
