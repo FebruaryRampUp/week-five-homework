@@ -4,14 +4,14 @@
 # 			(aka you must use two elsif's and an else).
 
 def cat_proximity(prox)
-	if prox.downcase == "near" || prox == 0
+	if prox.downcase == "near" || prox <= 1
 		puts "*hands in the air*'You're a kitty!'"
 		puts "[Yes you are! And you're sitting there! Hi, kitty!]"
 	elsif prox.downcase == "far" || prox > 10
 		puts "Intelligence levels normal"
 	elsif prox.downcase == "close" || prox < 2
+		puts "Approaching intelligence barrier:"
 		puts "Intelligence now equals Inanity of Statement"
-		puts "Approching intelligence barrier"
 		puts "Caution advised"
 	else
 		puts "Human Proximity to Cat is inversely correlated with both Intelligence and Inanity of Statement."
