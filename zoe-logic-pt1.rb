@@ -8,32 +8,15 @@
 # 5. Otherwise, output "Caballo"
 
 def logic1(x)
-	output = []
-	if x > 10
-		output.push("WHOA")
-	elsif 0 <= x && x <= 10
-		output.push("whoaaaa")
+	if 0 <= x && x <= 10
+		puts "whoaaaa"
 	elsif 14 < x && x < 100 && x.even?
-		output.push("Penguin")
-	elsif 100 <= x && x <= 1000 && x.odd?
-		output.push("Giraffe")
+		puts "Penguin"
+	elsif 100 <= x && x <= 1000 || x.odd?
+		puts "Giraffe"
+	elsif x > 10
+		puts "WHOA"
 	else
-		output.push("Caballo")
+		puts "Caballo"
 	end
-	output.map {|result| puts result}
 end
-
-puts "11 (WHOA):"
-puts logic1(11)
-puts "10 (whoaaaa):"
-puts logic1(10)
-puts "2 (whoaaaa):"
-puts logic1(2)
-puts "16 (Penguin):"
-puts logic1(16)
-puts "23 (Giraffe):"
-puts logic1(23)
-puts "102 (Giraffe):"
-puts logic1(102)
-puts "10001 (Caballo):"
-puts logic1(10001)
