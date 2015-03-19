@@ -8,31 +8,15 @@
 # 5. Otherwise, output "Caballo"
 
 def logic1(x)
-	output = []
-	if x > 10
-		return "WHOA"
-	elsif 0 <= x && x <= 10
-		return "whoaaaa"
-	elsif 14 < x && x < 100 && x % 2 == 0
-		return "Penguin"
-	elsif 100 <= x && x <= 1000 && x % 2 != 0
-		return "Giraffe"
+	if 0 <= x && x <= 10
+		puts "whoaaaa"
+	elsif 14 < x && x < 100 && x.even?
+		puts "Penguin"
+	elsif 100 <= x && x <= 1000 || x.odd?
+		puts "Giraffe"
+	elsif x > 10
+		puts "WHOA"
 	else
-		return "Caballo"
+		puts "Caballo"
 	end
 end
-
-puts "11:"
-puts logic1(11)
-puts "10:"
-puts logic1(10)
-puts "2:"
-puts logic1(2)
-puts "16:"
-puts logic1(16)
-puts "23:"
-puts logic1(23)
-puts "102:"
-puts logic1(102)
-puts "10001:"
-puts logic1(10001)
