@@ -4,6 +4,8 @@
 
 #### Part One:
 Implement the following functionality using if/else statements and booleans. Write a method that fulfills the following requirements:
+
+
 1. Output "WHOA" if x is greater than 10 
 2. Output "whoaaaa" if x is less than or equal to 10, but not negative 
 3. If x is greater than 14 but less than 100, and x is even, output "Penguin".  
